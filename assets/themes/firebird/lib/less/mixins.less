@@ -55,8 +55,8 @@
 
 @ltred: lighten(@red,20%);
 @dkred: darken(@red, 20%);
-@ltorange: lighten(@orange,20%);
-@dkorange: darken(@orange, 20%);
+@ltorange: lighten(@orange, 10%);;
+@dkorange: darken(@orange, 10%);
 @ltyellow: lighten(@yellow,20%);
 @dkyellow: darken(@yellow, 20%);
 @ltgreen: #BDBBA2;
@@ -209,7 +209,7 @@
 
 
 /* Buttons */
-.button(@background:@blue,@color:@blue) {
+.button(@background:@orange,@color:@orange) {
   padding: 6px 24px;
   .customsanserif;
   color: @color;
@@ -228,7 +228,7 @@
   .button();
 }
 
-.button-hover(@background:@blue,@color:@blue) {
+.button-hover(@background:@orange,@color:@orange) {
   .button(@background,@color);
   background-color: fade(@background,40%);
 }

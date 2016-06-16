@@ -24,15 +24,15 @@
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #2F5673;
+  color: #FCB040;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: rgba(47, 86, 115, 0);
-  border: 2px solid #2F5673;
+  background-color: rgba(252, 176, 64, 0);
+  border: 2px solid #FCB040;
   border-radius: 6px;
 }
 .button:hover,
@@ -43,17 +43,17 @@
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #2F5673;
+  color: #FCB040;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: rgba(47, 86, 115, 0);
-  border: 2px solid #2F5673;
+  background-color: rgba(252, 176, 64, 0);
+  border: 2px solid #FCB040;
   border-radius: 6px;
-  background-color: rgba(47, 86, 115, 0.4);
+  background-color: rgba(252, 176, 64, 0.4);
 }
 /* Clears */
 .msd-clearfix {
@@ -62,75 +62,6 @@
   height: 0;
   clear: both;
   visibility: hidden;
-}
-.pre-header {
-  min-height: 170px;
-  padding: 100px 0;
-  background-image: url(../img/bkg_hdr_home.jpg);
-  background-position: center 75%;
-  background-size: cover;
-  margin-bottom: -140px;
-}
-.pre-header .widget-area {
-  color: #FFF;
-  text-shadow: 0 0 4px #2D2D2D;
-  position: relative;
-  top: -80px;
-  font-family: "Raleway", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 1.625;
-  line-height: 1.8;
-}
-.pre-header .logo {
-  height: 170px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 30%;
-  background-image: url(../img/logo_shadow.png);
-}
-.site-header {
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-nav.homepage-top .menu li {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  display: block;
-  float: left;
-  width: 50%;
-}
-nav.homepage-top .menu li a {
-  text-align: center;
-  text-shadow: 0 0 8px #404040;
-  background: rgba(255, 255, 255, 0);
-  display: block;
-  font-family: "Allura", cursive;
-  font-weight: 400;
-  font-size: 80px;
-  font-size: 8rem;
-  line-height: 1;
-  padding: 1em 0;
-  color: #FFF;
-}
-nav.homepage-top .menu li a:hover,
-nav.homepage-top .menu li a:active {
-  background: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  color: #2D2D2D;
-}
-nav.homepage-top .menu li.floor-plans {
-  background-image: url(../img/bkg_floorplans.jpg);
-}
-nav.homepage-top .menu li.lifestyle {
-  background-image: url(../img/bkg_lifestyle.jpg);
 }
 .site-inner .button,
 .site-inner .button:hover {
@@ -190,7 +121,7 @@ nav.homepage-top .menu li.lifestyle {
   margin: 0.625em 0 0.375em;
 }
 .sectioned-page-wrapper .section.section-forms .section-content h3.gform_title {
-  color: #2F5673;
+  color: #FCB040;
 }
 .sectioned-page-wrapper .section.section-forms .section-content.column-2 {
   background-color: #FCB040;
@@ -272,10 +203,10 @@ nav.homepage-top .menu li.lifestyle {
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: rgba(254, 218, 164, 0);
+  background-color: rgba(253, 197, 114, 0);
   border: 2px solid #FCB040;
   border-radius: 6px;
-  background-color: #fedaa4;
+  background-color: #fdc572;
   font-size: 14px;
   max-width: 280px;
   width: 100%;
@@ -286,7 +217,7 @@ nav.homepage-top .menu li.lifestyle {
   padding: 8rem 0;
 }
 .sectioned-page-wrapper .section.section-lifestyle .section-title h3 {
-  color: #2F5673;
+  color: #FCB040;
 }
 .sectioned-page-wrapper .section.section-lifestyle .section-body .wrap {
   max-width: 700px;

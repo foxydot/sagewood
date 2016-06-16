@@ -61,18 +61,11 @@ function msdlab_add_apple_touch_icons(){
  * Add pre-header with social and search
  */
 function msdlab_pre_header(){
-    if(is_front_page()){
-        print '<div id="pre-header" class="pre-header">
-            <div class="wrap">';
-               do_action('msdlab_pre_header');
-        print '
-            </div>
-        </div>';
-    }
-}
-
-function msdlab_pre_header_logo(){
-    print '<div class="logo">
+    print '<div id="pre-header" class="pre-header">
+        <div class="wrap">';
+           do_action('msdlab_pre_header');
+    print '
+        </div>
     </div>';
 }
 
@@ -84,18 +77,6 @@ function msdlab_pre_header_sidebar(){
     print '<div class="widget-area">';
     dynamic_sidebar( 'pre-header' );
     print '</div>';
-}
-function msdlab_do_homepage_top_menu(){
-    if(has_nav_menu('homepage_top')){
-        $homepage_top = wp_nav_menu( 
-            array( 
-            'theme_location' => 'homepage_top',
-            'container_class' => 'menu genesis-nav-menu menu-tabs',
-            'echo' => FALSE, 
-            ) 
-        );
-    }
-    print '<nav id="homepage_top" class="homepage-top" itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope" role="navigation">'.$homepage_top.'</nav>';
 }
 
 function msdlab_header_right(){
@@ -171,7 +152,7 @@ function msdlab_get_thumbnail_url($post_id = null, $size = 'post-thumbnail'){
 
 function msdlab_page_banner(){
     if(is_front_page()){
-        msdlab_do_homepage_top_menu();
+        return false;
     } else {
     global $post;
     $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'page_banner' );
@@ -277,7 +258,6 @@ function msdlab_do_title_area(){
 
 function msdlab_do_section_title(){
     if(is_front_page()){
-        msdlab_do_homepage_top_menu();  
         //add_action('genesis_entry_header','genesis_do_post_title',5);
     } elseif(is_page()){
         global $post;

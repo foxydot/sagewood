@@ -1,71 +1,6 @@
 @import 'lesshat';
 @import 'mixins';
-.pre-header{
-  min-height: 170px;
-  padding: 100px 0;
-  background-image: url(../img/bkg_hdr_home.jpg);
-  background-position: center 75%;
-  background-size: cover;
-  margin-bottom: -140px;
-  .widget-area{
-    color: @white;
-    text-shadow: 0 0 4px @dkgrey;
-    position: relative;
-    top: -80px;
-    .custombody(1.4);
-    line-height: 1.8;
-  }
-  .logo{
-    height: 170px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 30%;
-    background-image:url(../img/logo_shadow.png);
-  }
-}
-.site-header{
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
 
-nav.homepage-top{
-  .menu{
-    li{
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      display: block;
-      float: left;
-      width: 50%;
-      //max-width: 49.4vw;
-      a{
-        text-align: center;
-        text-shadow: 0 0 8px @medgrey;
-        background: fade(@white,0%);
-        display: block;
-        .script(8);
-        padding: 1em 0;
-        color: @white;
-        &:hover, &:active{
-          background: fade(@white,60%);
-          text-decoration: none;
-          color: @dkgrey;
-        }
-      }
-      &.floor-plans{
-        background-image: url(../img/bkg_floorplans.jpg);
-      }
-      &.lifestyle{
-        background-image: url(../img/bkg_lifestyle.jpg);
-      }
-    }
-  }
-}
 .site-inner{
   div{
   }
@@ -123,7 +58,7 @@ nav.homepage-top{
         margin: 0.625em 0 0.375em;
       }
      h3.gform_title{
-        color: @blue;
+        color: @orange;
      }
      &.column-2{
        background-color: @orange;
@@ -192,7 +127,7 @@ nav.homepage-top{
     padding: 8rem 0;
     .section-title{
       h3{
-        color: @blue;
+        color: @orange;
       }
     }
     .section-body{
