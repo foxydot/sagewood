@@ -39,11 +39,20 @@
   }
 }
 .sidebar.sidebar-primary{
+  .button{
+    .button(@blue,@white);
+    background-color: @blue;
+    &:hover{
+      background-color:fade(@blue,80%);
+    }
+  }
   section.widget.widget_text{
     padding: 2rem;
     margin-bottom: 4rem;
+    color: @medgrey;
     .widget-wrap{
       background-color: @orange;
+      border: 1px solid @medgrey;
       border-radius: 12px;
       text-align: center;
       padding: 2rem;
@@ -54,18 +63,13 @@
           background-size: 50px auto;
           background-image:url(../img/icon-calculator.png);
           padding-left: 55px;
-          color: fade(@white,50%);
+          color: @medgrey;
           font-size: 3rem;
           line-height: 1;
-          span.word4{
-            font-weight: 700;
-            font-size: 3.8rem;
-            color: fade(@white,100%);
-          }
       }
       .button{
-        .button(@ltorange,@orange);
-        background-color: @ltorange;
+        .button(@white,@medgrey);
+        background-color: @white;
         font-size: 14px;
         width: 98%;
       }
@@ -76,18 +80,18 @@
 .text-sizer{
   display: block;
   z-index: 90;
-  color: @ltorange;
+  color: @medgrey;
   text-align: right;
   div{
+    border: 1px solid @ltgrey;
     background: fade(@white,80%);
     width: auto;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     float: right;
     i{
       margin-left: 0.5em;
       padding: 0.5em;
-      background: @ltorange;
-      color: @white;
+      color: @medgrey;
       cursor: pointer;
     }
   }
