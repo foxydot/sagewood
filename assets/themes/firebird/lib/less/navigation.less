@@ -132,6 +132,7 @@ Site Navigation
     .sub-menu{
       margin-top: 0px;
       background-color: @white;
+      border: 1px solid @ltgrey;
       li.menu-item{
         padding: 0 2rem;
         width: 100%;
@@ -146,6 +147,13 @@ Site Navigation
         .sub-menu{
           left: 0;
           top:0;
+        }
+      }
+      >li.menu-item.menu-item-has-children{
+        >a:after{
+          .fontawesome;
+          content: '\f105';
+          margin: 0 0.5em;
         }
       }
       li.last-child>a{

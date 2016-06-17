@@ -7349,6 +7349,7 @@ Site Navigation
 .nav-primary li.menu-item .sub-menu {
   margin-top: 0px;
   background-color: #FFF;
+  border: 1px solid #D4D4D4;
 }
 .nav-primary li.menu-item .sub-menu li.menu-item {
   padding: 0 2rem;
@@ -7365,6 +7366,11 @@ Site Navigation
 .nav-primary li.menu-item .sub-menu li.menu-item .sub-menu {
   left: 0;
   top: 0;
+}
+.nav-primary li.menu-item .sub-menu > li.menu-item.menu-item-has-children > a:after {
+  font-family: "FontAwesome";
+  content: '\f105';
+  margin: 0 0.5em;
 }
 .nav-primary li.menu-item .sub-menu li.last-child > a {
   border: 0;
