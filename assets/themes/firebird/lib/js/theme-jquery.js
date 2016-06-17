@@ -28,8 +28,8 @@ jQuery(document).ready(function($) {
         }
 	});
 	if($( window ).width() > 480){
-        $(".site-header").sticky();
-        $("nav.nav-primary").sticky({topSpacing:140});
+        $(".pre-header").sticky();
+        $(".site-header").sticky({topSpacing:54});
         $(".notification-bar").sticky({topSpacing:199});
     } else {
         $("nav.nav-primary").sticky({});
