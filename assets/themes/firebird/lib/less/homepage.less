@@ -118,26 +118,41 @@
     padding: 8rem 0;
     .section-title{
       h3{
-        color: @orange;
+        color: @blue;
       }
     }
     .section-body{
       .wrap{
         max-width: 700px;
+        .button{
+          border: 0;
+          background-color: @blue;
+          color: @white;
+          text-decoration: none;
+          &:hover{
+            background-color: darken(@blue,10%);
+          }
+        }
       }
     }
   }
   .section.section-programs{
-    color: @white;
+    background-size: contain;
+    background-position: left;
     padding: 8rem 0;
     .section-title{
+      padding-left: 50%;
       h3{
-        color: @white;
+        color: @orange;
+        text-align: left;
       }
     }
     .section-body{
+       padding-left: 50%;
       .wrap{
-        max-width: 700px;
+        max-width: 550px;
+        margin: 0;
+        text-align: left;
       }
     }
   }
