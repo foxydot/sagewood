@@ -63,6 +63,40 @@
   clear: both;
   visibility: hidden;
 }
+.hp-top {
+  z-index: -1;
+}
+.hp-top .widget_sp_image .image-widget-background {
+  padding: 7em 0;
+}
+.hp-top .widget_sp_image h2.hero-title {
+  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  font-size: 5rem;
+  line-height: 1.625;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+}
+.hp-top .widget_sp_image h3 {
+  line-height: 1;
+  color: #FFF;
+}
+.hp-top .widget_sp_image .button {
+  border: 0;
+  background-color: #0098B2;
+  color: #FFF;
+  text-decoration: none;
+  margin: 0;
+}
+.hp-top .widget_sp_image .button:hover {
+  background-color: #006c7f;
+}
+.site-inner {
+  background: #FFF !important;
+}
 .site-inner .button,
 .site-inner .button:hover {
   width: auto;

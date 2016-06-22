@@ -5,4 +5,9 @@ jQuery(document).ready(function($) {
     $('#homepage-widgets section.widget').addClass('col-sm-'+cols);
     $('#homepage-widgets section.widget').addClass('col-xs-12');
 
+
+    if($( window ).width() > 480){
+        $(".hp-top").sticky({topSpacing:144});
+    } else {
+    }
 });

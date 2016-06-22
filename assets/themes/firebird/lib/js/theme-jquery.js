@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 	if($( window ).width() > 480){
         $(".pre-header").sticky();
         $(".site-header").sticky({topSpacing:54});
-        $(".notification-bar").sticky({topSpacing:199});
+        $(".notification-bar").sticky({topSpacing:164});
     } else {
         $("nav.nav-primary").sticky({});
     }
