@@ -62,12 +62,12 @@
      }
      &.column-2{
        background-color: @orange;
-       color: @white;
+       color: @medgrey;
        .calculator-box{
          margin: 30px auto;
          width: auto;
          display: inline-block;
-         border: 1px solid @offwhite;
+         border: 1px solid @medgrey;
          border-radius: 12px;
         font-size: 2.1rem;
         padding: 2rem;
@@ -84,10 +84,6 @@
              background-image:url(../img/icon-calculator.png);
            }
          }
-         .button{
-           .button(@white,@white);
-           font-size: 14px;
-         }
          p{
            margin: 0;
          }
@@ -98,21 +94,16 @@
             background-size: 50px auto;
             background-image:url(../img/icon-calculator.png);
             padding-left: 55px;
-            color: fade(@white,50%);
+            color: @medgrey;
             font-size: 3rem;
             line-height: 1;
             max-width: 280px;
             margin-left: auto;
             margin-right: auto;
-            span{
-              font-weight: 700;
-              font-size: 3.8rem;
-              color: fade(@white,100%);
-            }
         }
         .button{
-          .button(@ltorange,@orange);
-          background-color: @ltorange;
+          .button(@white,@medgrey);
+          background-color: @white;
           font-size: 14px;
           max-width: 280px;
           width: 100%;
