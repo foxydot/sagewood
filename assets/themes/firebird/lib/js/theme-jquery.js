@@ -27,12 +27,15 @@ jQuery(document).ready(function($) {
             $(this).next('.ginput_container').find('select option.first-child').html(placeholder.replace(/(<([^>]+)>)/ig,""));
         }
 	});
+	
+    var preheaderheight = $(".pre-header").outerHeight();
+    var headerheight = $(".site-header").outerHeight();
 	if($( window ).width() > 480){
         $(".pre-header").sticky();
-        $(".site-header").sticky({topSpacing:54});
-        $(".notification-bar").sticky({topSpacing:164});
+        $(".site-header").sticky({topSpacing:preheaderheight});
+        $(".notification-bar").sticky({topSpacing:headerheight});
     } else {
-        $("nav.nav-primary").sticky({});
+        $(".site-header").sticky();
     }
     //add element to page
     $('article.first-child').prepend('<div class="text-sizer"><div>Font Size <i class="minus fa fa-minus"></i><i class="plus fa fa-plus"></i></div></div>');

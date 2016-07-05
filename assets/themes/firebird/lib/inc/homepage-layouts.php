@@ -18,7 +18,7 @@ function msdlab_add_homepage_hero_flex_sidebars(){
  */
  add_action('genesis_after_header','msdlab_hero');
 function msdlab_hero(){
-    if(is_active_sidebar('homepage-top')){
+    if(is_active_sidebar('homepage-top') && is_front_page()){
         print '<div id="hp-top" class="hp-top">';
         dynamic_sidebar('homepage-top');
         print '</div>';

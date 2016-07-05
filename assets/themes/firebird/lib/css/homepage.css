@@ -273,6 +273,10 @@
     border-top: 6px solid #FCB040;
     border-bottom: 0 solid #FCB040;
   }
+  .sectioned-page-wrapper .section.section-forms .section-body > .wrap > .row {
+    margin: 0;
+    padding: 0;
+  }
   .sectioned-page-wrapper .section.section-forms .section-content {
     padding-left: 10vw;
     padding-right: 10vw;
@@ -303,9 +307,20 @@
   .sectioned-page-wrapper .section.section-programs {
     padding: 7vw 0;
   }
+  .sectioned-page-wrapper .section.section-programs .section-title,
+  .sectioned-page-wrapper .section.section-programs .section-body {
+    padding-right: 2%;
+  }
 }
 @media only screen and (max-width: 479px) {
-  .header-image .title-area {
-    display: none;
+  .sectioned-page-wrapper .section.section-programs {
+    padding: 100vw 0 0 0;
+    background-position: top left;
+    background-size: 220% auto;
+  }
+  .sectioned-page-wrapper .section.section-programs .section-title,
+  .sectioned-page-wrapper .section.section-programs .section-body {
+    background-color: #FFF;
+    padding: 0 2vw;
   }
 }

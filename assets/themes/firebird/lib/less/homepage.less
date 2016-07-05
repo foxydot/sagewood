@@ -204,6 +204,10 @@
     .background-image(linear-gradient(to bottom, @offwhite 0%,@offwhite 49.9%,@orange 50%,@orange 100%));
       border-top: 6px solid @orange;
       border-bottom: 0 solid @orange;
+      .section-body>.wrap>.row{
+        margin: 0;
+        padding: 0;
+      }
       .section-content{
        padding-left: 10vw;
        padding-right: 10vw;
@@ -236,14 +240,26 @@
     }
     .section.section-programs{
       padding: 7vw 0;
+      .section-title,.section-body{
+        padding-right: 2%;
+      }
     }
   }
 }
 
 
 @media only screen and (max-width: 479px) {
-
-  .header-image .title-area{
-    display: none;
+  .sectioned-page-wrapper{
+    .section.section-programs{
+      padding: 100vw 0 0 0;
+      background-position: top left;
+      background-size: 220% auto;
+      .section-title,.section-body{
+        background-color: @white;
+        padding: 0 2vw;
+        
+      }
+    }
   }
+
 }

@@ -8616,18 +8616,13 @@ Site Footer
     position: relative;
   }
   .nav-primary li.menu-item {
-    padding: 0 1vw;
+    padding: 0;
     font-size: 1.2vw;
     z-index: 800;
   }
   .nav-primary li.menu-item a {
-    padding: 1.2vw 1vw;
-    border-bottom-width: 0.4vw;
-  }
-  .nav-primary li.menu-item:hover a,
-  .nav-primary li.menu-item.current-menu-ancestor a,
-  .nav-primary li.menu-item.current-menu-item a {
-    border-bottom-width: 0.4vw;
+    font-size: 1.2vw;
+    padding: 2.4vw 0.6vw;
   }
   .nav-primary li.menu-item .sub-menu a {
     font-size: 1.2vw;
@@ -8646,19 +8641,23 @@ Site Footer
     background-image: none;
   }
   .footer-widgets .widget.widget_nav_menu ul.menu {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
   }
 }
 /* Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
   /* Enter Your Custom Styles Here */
   .mobile-only {
     display: block;
   }
-}
-@media only screen and (max-width: 479px) {
+  .site-header {
+    padding: 0;
+  }
+  .nav-primary {
+    width: 100vw;
+  }
   .nav-responsive {
     text-align: left;
     border-bottom: 0;
@@ -8751,19 +8750,6 @@ Site Footer
     right: 15px;
     top: 0.25em;
   }
-  /* Enter Your Custom Styles Here */
-  .pre-header .wrap .header-widget-area .widget {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  .pre-header .wrap .header-widget-area .widget .button span {
-    display: block;
-  }
-  .pre-header .wrap .header-widget-area .msd-connected {
-    margin-top: -1.5rem;
-  }
   .header-image .site-header {
     margin: 0 auto;
     text-align: center;
@@ -8792,6 +8778,23 @@ Site Footer
   .header-image .nav-primary .wrap {
     padding: 0;
   }
+}
+@media only screen and (max-width: 479px) {
+  /* Enter Your Custom Styles Here */
+  .pre-header .wrap .header-widget-area .widget {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .pre-header .wrap .header-widget-area .widget .button span {
+    display: block;
+  }
+  .footer-widgets .widget.widget_nav_menu ul.menu {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
   .tablepress td,
   .tablepress th {
     display: inline-block;
@@ -8799,11 +8802,6 @@ Site Footer
 }
 @media only screen and (max-width: 322px) {
   /* Enter Your Custom Styles Here */
-  .footer-widgets .widget.widget_nav_menu ul.menu {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
-  }
   .site-footer .wrap div.icons i.logo-lcs {
     top: 2em;
   }
