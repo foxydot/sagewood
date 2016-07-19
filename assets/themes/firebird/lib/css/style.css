@@ -7448,7 +7448,7 @@ Site Navigation
 --------------------------------------------- */
 .nav-footer {
   padding: 0.5rem 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .nav-footer li.menu-item {
   width: auto;
@@ -8093,7 +8093,7 @@ Site Footer
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 400;
   font-size: 10px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.625;
   text-align: center;
   padding: 2rem;
@@ -8147,14 +8147,14 @@ Site Footer
   background-image: url(../img/logo-leed.svg);
 }
 .site-footer .wrap div.icons i.logo-lcs {
-  background-image: url("../img/logo-lcs.svg");
+  background-image: url("../img/logo-lcs-new-white.png");
   background-position: right center;
   font-style: normal;
   line-height: 3;
   max-height: 30px;
   text-align: left;
-  top: -5px;
-  width: 170px;
+  top: 5px;
+  width: 250px;
 }
 .site-footer .wrap .backtotop {
   position: absolute;
