@@ -37,6 +37,12 @@ jQuery(document).ready(function($) {
     } else {
         $(".site-header").sticky();
     }
+    
+    $(window).scroll(function() {
+       if($(window).scrollTop() == 0) {
+           $(".sticky-wrapper").css('height','auto');
+       }
+    });
     //add element to page
     $('article.first-child').prepend('<div class="text-sizer"><div>Font Size <i class="minus fa fa-minus"></i><i class="plus fa fa-plus"></i></div></div>');
     //$('.text-sizer').sticky({topSpacing:210});
