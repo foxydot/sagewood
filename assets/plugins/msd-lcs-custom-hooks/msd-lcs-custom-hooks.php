@@ -53,8 +53,9 @@ Author URI: http://msdlab.com
                             ) );
                 foreach($events AS $event){
                     $ret .= '
-                    [su_spoiler title="<strong>'.$event->post_title.'</strong> '.date("M d, Y H:ia",strtotime($event->EventStartDate)).'"]
-                    '.$event->post_content.'[/su_spoiler]';
+                    [su_spoiler title="<strong>'.$event->post_title.'</strong> '.date("M d, Y g:ia",strtotime($event->EventStartDate)).'"]
+                    '.tribe_get_template_part( 'modules/meta' ).'[/su_spoiler]';
+										//.$event->post_content.'[/su_spoiler]';
                 }            
                 $ret = '[su_accordion]'.$ret.'[/su_accordion]';
                 if(shortcode_exists('su_accordion')){
